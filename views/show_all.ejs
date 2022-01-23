@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="/static/show_all.css">
+<script  src="/static/drop_down.js"></script> 	
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,100;1,200&display=swap" rel="stylesheet">
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300&display=swap" rel="stylesheet"> 	
+	
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400&display=swap" rel="stylesheet"> 	
+</head>
+
+
+
+<body><a href="/accounts"><p>&larr;</p></a>
+	<div id="container">
+		<div id="head">
+			<h3 id="head-title">
+			All Accounts! 
+			</h3>
+		</div>
+		<div id="options">
+			<div id="O1" >
+				
+				<form method="post" action='/search_1' id="grid-O1">
+					<div>
+						<h4>
+							Search by ID:
+						</h4>
+					<input type="text" placeholder="search.... " name="search1">	
+					</div>
+				<div>
+					<button type="submit" class="submit-search">
+						Search
+					</button>
+				</div>
+				</form>
+			</div>
+			
+			
+			
+			<div id="O3">
+				<label for="data"><h4>
+					Sort by : 
+					</h4></label><br>
+				<form method="post" action="/DD" id="grid-O1">
+					<div>
+						<select name="data" id="data" >
+							<option value="1" >Default</option>
+							<option value="2" >Highest to Lowest total</option>
+							<option value="3" >Lowest to highest total</option>
+						</select>
+					</div>
+					<div>
+						<button type="submit" class="submit-dd">
+							Get data
+						</button>
+					</div>
+				</form>
+				
+			</div>
+		</div>
+
+		<div id="table">
+			<table>
+				<tr>
+					<th>ID</th><th>FIRST NAME</th><th>LAST NAME</th><th>AGE</th><th>CITY</th><th>TOTAL</th><th>PAID</th>						<th>DUE</th>
+				</tr>
+					    <%
+        				if(userData.length!=0){
+        				var i=1;
+        				userData.forEach(function(data){
+        				%>
+        		<tr>
+            		<td><%=data.ID %></td>
+            		<td><%=data.firstname %></td>
+            		<td><%=data.lastname %></td>
+            		<td><%=data.age %></td>
+					<td><%=data.city %></td>
+					<td><%=data.total %></td>
+					<td><%=data.paid %></td>
+					<td><%=data.due %></td>
+					
+       			</tr>
+        			    <%  i++; }) %>
+        				<% } else{ %>
+            	<tr>
+                	<td colspan="7">No Data Found</td>
+            	</tr>
+        			<% } %>
+			</table>
+		</div>
+	</div>
+		
+	
+</body>
+
+

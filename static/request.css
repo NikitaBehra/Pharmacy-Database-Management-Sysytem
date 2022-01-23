@@ -1,0 +1,29 @@
+body{
+	background-color:snow;
+}
+
+p{
+	font-family: 'Open Sans', sans-serif;
+	font-size:40px;
+	margin-top:170px;
+	color:#1b4f72;
+	text-shadow: -1px 1px 0 white,
+                          1px 1px 0 white,
+                         1px -1px 0 white,
+                        -1px -1px 0 white;
+}
+a{
+	font-family: 'Open Sans', sans-serif;
+	font-size:20px;
+	margin-top:80px;
+	color: #6a6f72 ;
+	transition: 0.7s;
+}
+a:hover{
+	color: #1f618d ;
+	transform:scale(1.2)
+}
+.container-r
+{
+	margin: auto;
+}

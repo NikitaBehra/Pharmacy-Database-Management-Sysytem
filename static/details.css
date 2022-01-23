@@ -1,0 +1,130 @@
+body{
+	background-color: snow;
+}
+h3{
+	margin:auto;
+	color: #14192d ;
+	font-family: 'Open Sans', sans-serif;
+	font-size:18px; 
+	text-decoration:underline  #123d1a ;
+}
+h4{
+	margin:auto;
+	color:#13304E;
+	font-family: 'Open Sans', sans-serif;
+	font-size:16px; 
+}
+h5{
+	margin:auto;
+	text-decoration:underline  #123d1a ;
+	color: #14192d  ;
+	font-family: 'Open Sans', sans-serif;
+	font-size:13px; 
+}
+#box-container-1{
+	margin:auto;
+	/* background-color:red; */
+	margin-top:-60px;
+	width:65%;
+	height:auto;
+	display:grid;
+	grid-template-rows:auto auto;
+}
+p{
+	color: #14192d ;
+	margin:auto;
+	font-size:50px;
+}
+a{
+	text-decoration:none;
+}
+a:hover{
+	cursor:pointer;
+}
+#box-container-2{
+	
+	background-color:none;
+	margin:auto;
+	margin-top:20px;
+	width:100%;
+	height:auto;
+	display:grid;
+	grid-template-columns:2fr 1fr ;
+	
+}
+
+
+#table{
+	
+	margin:auto;
+	margin-top:100px;
+	background-color:none;
+	width:70%;
+}
+
+
+table {
+	
+	border: 2px solid   black  ;
+  	border-collapse: collapse;
+	width: 100%;
+}
+th{
+	height:40px;
+	font-size:18px;
+	text-align:center;
+	border: 2px solid black ;
+	font-family: 'IBM Plex Sans Arabic', sans-serif;
+	color: #13304E;
+}
+td{
+	color:#14192d ;
+	font-size:16px;
+	text-align:center;
+	border: 2px solid black ;
+	font-family: 'IBM Plex Sans Arabic', sans-serif;
+}
+
+
+
+#box-1{
+	width:100%;
+	display:grid;
+	grid-template-columns:1fr 2fr ;
+	grid-template-rows:auto auto;
+	
+}
+
+
+#box-1-1{
+	
+	border-left: 1px solid  #e2a41c  ;
+	border-top:1px solid  #e2a41c ;
+	border-right:1px solid  #e2a41c ;
+}
+#box-1-2{
+	border-right: 1px solid  #e2a41c  ;
+	border-top:1px solid  #e2a41c ;
+}
+#box-1-3{
+	border: 1px solid  #e2a41c  ;
+}
+#box-1-4{
+	border-top:1px solid  #e2a41c ;
+	border-bottom:1px solid  #e2a41c ;
+}
+
+#box-2-1{
+	display:grid;
+	grid-template-columns:1fr 1fr;
+	justify-content:space-between;
+	border: 1px solid  #e2a41c  ;
+	
+}
+#d2{
+	border-left: 1px solid  #e2a41c  ;
+}
+#d3{
+	border-right: 1px solid  #e2a41c  ;
+	border-top: 1px solid  #e2a41c  ;
+}
